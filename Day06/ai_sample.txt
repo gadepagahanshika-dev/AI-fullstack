@@ -1,0 +1,9 @@
+AI stands for Artificial Intelligence.
+It is a technology that enables computers and machines to perform tasks that normally require human intelligence.
+AI can learn from data, recognize patterns, and make decisions.
+It is used in chatbots like ChatGPT, virtual assistants, and customer support systems.
+AI powers recommendation systems on platforms such as YouTube, Netflix, and Amazon.
+It is used in image and speech recognition, such as face unlock and voice assistants.
+AI helps in healthcare by assisting with diagnosis and medical data analysis.
+It is used in self-driving vehicles and smart navigation systems.
+AI can improve productivity by automating repetitive tasks.

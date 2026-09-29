@@ -1,11 +1,7 @@
 import ollama
 import streamlit as st
 with st.sidebar:
-    st.title("Chat Settings")
-    st.write("upload file")
-    if st.button("Clear Chat"):
-            st.session_state.msgs = []
-            st.success("chat history cleared")
+    st.title("Chat Settings ⚙️")
     personalities = {
         "kid" : "Answer the questions like you are explaining to a 5 year old kid. give answer in 2 lines only.",
         "Friend" : "Answer the questions in a friendly and casual manner. give answer in 2 lines only.",
@@ -15,14 +11,16 @@ with st.sidebar:
     uploaded_file = st.file_uploader("upload  a file")
     try:
         if uploaded_file:
-            st.success("File uploaded successfully!")
+            st.success("File uploaded successfully!✅")
             if st.button("Read file"):
                 context = uploaded_file.read().decode("utf-8")
             st.text(context)
     except:
         st.error("Error")
-     
-st. title("welcome to my ChatBot app!")
+    if st.button("Clear Chat"):
+                st.session_state.msgs = []
+                st.success("chat history cleared")
+st.markdown(":orange[Welcome to my ChatBot app 😊]")
 if "msgs" not in st.session_state:
     st.session_state.msgs = []
 for msg in st.session_state.msgs:
@@ -49,3 +47,4 @@ if question:
         )
     with st.chat_message("Assistant"):
         st.write(response["message"]["content"])
+    
